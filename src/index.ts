@@ -16,6 +16,6 @@ const app = await Spectrum({
 // conversation) and an inbound `message`. Reply by awaiting `space.send(...)`.
 for await (const [space, message] of app.messages) {
   if (message.content.type === "text") {
-    await space.send(`echo: ${message.content.text}`);
+    await space.send(`echo : ${message.content.text}`);
   }
 }
